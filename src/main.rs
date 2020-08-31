@@ -1,5 +1,14 @@
-fn main(){
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-
-    let a = [1,2,3,4,5]
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool
 }
+fn main(){
+    let user1: User = User{
+        email: String::from("vins@vins.dev"),
+        username: String::from("vins"),
+        active: true,
+        sign_in_count: 1,
+    };
+};
