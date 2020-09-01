@@ -1,6 +1,8 @@
 struct Rectangle {
     width: u32,
-    height: u32
+    height: u32,
+    mm: u32,
+    cm: u32
 }
 
 fn main() {
