@@ -1,18 +1,17 @@
-struct Rectangle {
-    width: u32,
-    height: u32,
-    mm: u32,
-    cm: u32
+fn main(){
+    let s = String::from("hello");
+
+    takes_ownership(s);
+
+    let x = 5;
+
+    makes_copy(x);
 }
 
-fn main() {
-    let rect1 = Rectangle {width: 30, height: 50};
-    println!(
-        "사각형의 면적: {}제곱픽셀",
-        area(&rect1)
-    );
+fn takes_ownership(some_string: String){
+    println!("{}", some_string);
 }
 
-fn area(rectangle: &Rectangle) -> u32 {
-    rectamgle.width * rectangle.height
+fn makes_copy(some_integer: i32){
+    println!("{}", some_integer);
 }
