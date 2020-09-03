@@ -1,17 +1,15 @@
-fn main(){
-    let s1 = gives_ownership();
-
-    let s2 = String::from("hello");
-
-    let s3 = takes_and_gives_back(s2);
+enum Coin {
+    Penny,
+    Nickle,
+    Dime,
+    Quarter,
 }
 
-fn gives_ownership() -> String {
-    let some_string = String::from("hello");
-
-    some_string
-}
-
-fn take_and_gives_back(a_string: String) -> String {
-    a_string
+fn value_in_cents(coin: Coin) -> u32 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickle => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
 }
