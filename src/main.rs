@@ -1,10 +1,26 @@
-fn plus_one(x: Option<i32>) -> Option(i32) {
-    match x {
-        None => None,
-        Some(i) => Some(i + 1),
-    }
-}
+// 변수와 가변성 
 
-let five = Some(5);
-let six = plus_one(five);
-let none = plus_one(None);
+// fn main() {
+//     let x = 5; // 기본적으로 러스트에서의 변수선언은 불변성을 갖는다.
+//     println!("{}", x);
+
+//     x = 6;
+//     println!("{}", x);
+// }
+
+// fn main() {
+//     let mut x = 5; // mut 키워드를 통해 변할 수 있게 선언해준다.
+//     println!("{}", x);
+
+//     x = 6;
+//     println!("{}", x);
+// }
+
+// 상수 선언과 불변변수와의 차이
+
+// const 키워드를 통해 선언한다.
+// 할당할 값의 타입을 반드시 지정해야한다.
+// mut키워드를 사용 할 수 없다. 
+// 상수 이름에 대문자만 이용한다.
+
+const MAX_POINT: i32 = 100;
