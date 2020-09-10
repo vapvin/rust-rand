@@ -23,4 +23,4 @@
 // mut키워드를 사용 할 수 없다. 
 // 상수 이름에 대문자만 이용한다.
 
-const MAX_POINT: i32 = 100;
+// const MAX_POINT: i32 = 100;
