@@ -24,3 +24,19 @@
 // 상수 이름에 대문자만 이용한다.
 
 // const MAX_POINT: i32 = 100;
+
+// Data Types
+
+// 8bit i8 u8
+// 16bit i16 u16
+// 32bit i32 u32
+// 64bit i64 u64
+// arch isize usize
+
+// ownerships
+
+fn main(){ // block 기준으로 소유자를 확인
+    let a = {
+        5
+    } // 블록이 끝날 시에 메모리 반환
+}
