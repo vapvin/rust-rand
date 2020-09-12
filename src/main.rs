@@ -35,8 +35,23 @@
 
 // ownerships
 
-fn main(){ // block 기준으로 소유자를 확인
-    let a = {
-        5
-    }; // 블록이 끝날 시에 메모리 반환
+// fn main(){ // block 기준으로 소유자를 확인
+//     let a = {
+//         5
+//     }; // 블록이 끝날 시에 메모리 반환
+// }
+
+fn first_word(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+    s.len()
+}
+
+fn main() {
+    first_word("HelloWrodl")
 }
