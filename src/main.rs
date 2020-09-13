@@ -41,17 +41,37 @@
 //     }; // 블록이 끝날 시에 메모리 반환
 // }
 
-fn first_word(s: &String) -> usize {
-    let bytes = s.as_bytes();
+// fn first_word(s: &String) -> usize {
+//     let bytes = s.as_bytes();
 
-    for (i, &item) in bytes.iter().enumerate() {
-        if item == b' ' {
-            return i;
-        }
-    }
-    s.len()
+//     for (i, &item) in bytes.iter().enumerate() {
+//         if item == b' ' {
+//             return i;
+//         }
+//     }
+//     s.len()
+// }
+
+// fn main() {
+//     first_word("HelloWrodl")
+// }
+
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool
 }
 
-fn main() {
-    first_word("HelloWrodl")
+fn main(){
+    let mut user1 = User {
+        email: String::from("some@example.com"),
+        username: String::from("someuser"),
+        active: true,
+        sign_in_count: 1,
+    };
+
+    user1.email = String::from("otheruser@example.com");
+
 }
+
