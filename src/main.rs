@@ -56,30 +56,36 @@
 //     first_word("HelloWrodl")
 // }
 
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool
-}
+// struct User {
+//     username: String,
+//     email: String,
+//     sign_in_count: u64,
+//     active: bool
+// }
 
-fn main(){
-    let mut user1 = User {
-        email: String::from("some@example.com"),
-        username: String::from("someuser"),
-        active: true,
-        sign_in_count: 1,
-    };
+// fn main(){
+//     let mut user1 = User {
+//         email: String::from("some@example.com"),
+//         username: String::from("someuser"),
+//         active: true,
+//         sign_in_count: 1,
+//     };
 
-    user1.email = String::from("otheruser@example.com");
+//     user1.email = String::from("otheruser@example.com");
 
-}
+// }
 
-fn build_user(email: String, username: String) -> User {
-    User{
-        email,
-        username,
-        active: true,
-        sign_in_count: 1,
-    }
+// fn build_user(email: String, username: String) -> User {
+//     User{
+//         email,
+//         username,
+//         active: true,
+//         sign_in_count: 1,
+//     }
+// }
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
 }
