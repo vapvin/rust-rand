@@ -84,15 +84,23 @@
 //     }
 // }
 
-#[derive(Debug)]
-struct Rectangle {
-    width: u32,
-    height: u32,
-}
+// #[derive(Debug)]
+// struct Rectangle {
+//     width: u32,
+//     height: u32,
+// }
 
 
-impl Rectangle {
-    fn area(&self) -> u32 {
-        self.width * self.height
-    }
+// impl Rectangle {
+//     fn area(&self) -> u32 {
+//         self.width * self.height
+//     }
+// }
+
+enum IpAddrKind {
+    V4,
+    V6,
 }
+
+let four = IpAddrKind::V4;
+let six = IpAddrKind::V6;
