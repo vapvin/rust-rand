@@ -56,30 +56,39 @@
 //     first_word("HelloWrodl")
 // }
 
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u64,
-    active: bool
+// struct User {
+//     username: String,
+//     email: String,
+//     sign_in_count: u64,
+//     active: bool
+// }
+
+// fn main(){
+//     let mut user1 = User {
+//         email: String::from("some@example.com"),
+//         username: String::from("someuser"),
+//         active: true,
+//         sign_in_count: 1,
+//     };
+
+//     user1.email = String::from("otheruser@example.com");
+
+// }
+
+// fn build_user(email: String, username: String) -> User {
+//     User{
+//         email,
+//         username,
+//         active: true,
+//         sign_in_count: 1,
+//     }
+// }
+
+struct Com {
+    modelname: String,
+    version: String,
 }
 
-fn main(){
-    let mut user1 = User {
-        email: String::from("some@example.com"),
-        username: String::from("someuser"),
-        active: true,
-        sign_in_count: 1,
-    };
-
-    user1.email = String::from("otheruser@example.com");
-
-}
-
-fn build_user(email: String, username: String) -> User {
-    User{
-        email,
-        username,
-        active: true,
-        sign_in_count: 1,
-    }
+fn main (){
+    
 }
