@@ -236,5 +236,5 @@ pub fn eat_at(){
 }
 
 pub fn like_that() {
-    crate::front_of_house::hosting::
+    crate::front_of_house::hosting::like_boss();
 }
